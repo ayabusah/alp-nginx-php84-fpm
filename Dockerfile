@@ -1,4 +1,4 @@
-ARG ALPINE_VERSION=3.21
+ARG ALPINE_VERSION=3.21.3
 FROM alpine:${ALPINE_VERSION}
 LABEL Maintainer="Clement PAUMIER"
 LABEL Description="Container with Nginx 1.26 & PHP FPM 8.4 based on Alpine Linux."
@@ -27,6 +27,8 @@ RUN apk add --no-cache \
   php84-xml \
   php84-xmlreader \
   php84-xmlwriter \
+  php84-simplexml \
+  php84-pecl-imagick \
   supervisor
 
 RUN ln -s /usr/bin/php84 /usr/bin/php

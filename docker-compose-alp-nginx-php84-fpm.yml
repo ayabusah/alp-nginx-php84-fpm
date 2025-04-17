@@ -1,0 +1,6 @@
+services:
+  nginx-php84-fpm:
+    container_name: alp-nginx-php84-fpm
+    image: alp-nginx-php84-fpm
+    ports:
+      - 8080:8080
