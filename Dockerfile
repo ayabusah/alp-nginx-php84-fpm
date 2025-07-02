@@ -28,7 +28,12 @@ RUN apk add --no-cache \
   php84-xmlreader \
   php84-xmlwriter \
   php84-simplexml \
+  php84-exif \
+  php84-zip \
+  php84-iconv \
   php84-pecl-imagick \
+  php84-redis \
+  git \
   supervisor
 
 RUN ln -s /usr/bin/php84 /usr/bin/php
